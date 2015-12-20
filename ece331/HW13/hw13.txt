@@ -1,0 +1,78 @@
+1)
+sqlite3 passwd.db (from bash)
+CREATE TABLE users(name TEXT, password TEXT, UID INTEGER, GECOS BLOB, directory TEXT, shell TEXT);
+.serprator(":");
+import ask sheaff
+
+2)
+ The cron job runs at 12:06, 12:12, 12:18 and 12:24 AM AND PM on Thursday, April 25.
+
+3)
+ a)
+  Locking is necessary to prevent race conditions.  If Locking isn't used then the process that last wrote to a device will input the final value. Also Locking is used to prevent a process from interupting another porcess that may be in the middle of writing to a file.
+
+ b)
+  The most appropriate locking mechanism for interacting with the GPIO pins for use with the RBG LED would be a mutex semaphore. Mutex semaphores only allow one process to run at a time and allow the process that is wating to go to a sleep mode preventing the system from locking up.
+
+4)
+  a)
+  I would blacklist the address that "Adam's" account was trying to connect to.  Also I would squash "Adam's" sudo command.
+  b)
+  I would closely moniter Adams's account and promptly contact a supervisor.
+
+5)
+|-----------------------------------------------|
+| Network | Gateway |    Genmask    | Interface |
+|---------|---------|---------------| --------- |
+| 1.2.3.0 | 0.0.0.0 | 255.255.255.0 |   ETH0    |
+|---------|---------|---------------|-----------|
+| 9.8.0.0 | 0.0.0.0 |  255.255.0.0  |   ETH1    |
+|---------|---------|---------------|-----------|
+| 0.0.0.0 | 9.9.7.5 |    0.0.0.0    |   ETH1    |
+|---------|---------|---------------|-----------|
+| 10.0.0.0| 0.0.0.0 |   255.0.0.0   |   ETH2    |
+|---------|---------|---------------|-----------|
+|127.0.0.0| 0.0.0.0 |    0.0.0.0    |    lo     |
+|-----------------------------------------------|
+
+6)
+|-----------------------------------------------------------------------|
+| Group       |   Network    |  Broadcast   |    Netmask    | Total     |
+|             |   Address    |  Address     |               | Addresses |
+|-------------|--------------|--------------|---------------|-----------|
+| DSP         |   10.0.0.0   | 10.0.127.255 | 255.255.128.0 |   32,766  |
+|-------------|--------------|--------------|---------------|-----------|
+| Controls    |  10.0.128.0  | 10.0.191.255 | 255.255.192.0 |   16,384  |
+|-------------|--------------|--------------|---------------|-----------|
+| Electronics | 10.0.192.255 | 10.0.255.255 | 255.255.192.0 |   16,384  |
+|-----------------------------------------------------------------------|
+
+7)
+in /etc/exports
+/home 45.32.0.0/30(rw,sync,no_subtree)
+
+8)
+for($i=0;$i<h;$i++){
+    print "<TR>";
+    for($j=0;$j<$w;$j++){
+	print "<TD>" "<TD>";
+    }
+    print "</TR>";
+}
+
+9)
+import numpy
+t=numpy.linspace(0,0.05,1000);
+V_x = cos(100*t)V
+
+10)
+|--------------------------------------------------------|
+|   Network   |     IP      |  Netmask  |   Broadcast    |
+|--------------------------------------------------------|
+| 10.128.0.0  | 10.129.4.5  |    /13    | 10.135.255.255 |
+|--------------------------------------------------------|
+| 172.81.32.0 | 172.81.32.1 |    /20    | 172.91.47.255  |
+|--------------------------------------------------------|
+
+11)
+  learn php, perl and python before taking 331.

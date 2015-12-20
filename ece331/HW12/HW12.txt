@@ -1,0 +1,38 @@
+1) Give the crontab entry to run a job every other day at 11:05 am and 11:55 pm. The command to run is xkcd.
+
+# m h dom mon dow user  command
+5  11  */2 * *  root    xkcd
+55 23  */2 * *  root    xkcd
+
+2) See attached
+
+
+3)Working with a teammate, setup an NFS server, securely export a filesystem and then mount it on your RPi.
+
+	a)Give the name of your teammates.
+		Mao Yanxiang
+		Joey Garcia
+	
+	b)	sudo apt-get install nfs-kernel-server
+		sudo vim /etc/exports
+		#add this in last line: //home/client1   *(rw,sync,root_squash)
+		sudo /etc/init.d/rpcbind restart
+		sudo /etc/init.d/nfs-kernel-server restart
+
+	 c) Give the name of the directory being exported.
+		/home/client1
+
+	d) Give the filename(s) and configuration you added or modified on the NFS server
+		modified:
+		 /etc/exports
+		
+		added:
+		home/pi/Desktop/share *(rw,sync,root_squash)
+		to the /etc/exports file
+
+	e) Give all successful commands to mount the exported file system on your RPi.
+		sudo mount 192.168.0.25:/home/client1 /mnt/nfs
+
+	 f) Give the filename(s) and configuration you added or modified on the NFS client.
+		added:
+		/mnt/nfs

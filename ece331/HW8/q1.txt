@@ -1,0 +1,20 @@
+ 1)
+
+|- - - - - - - - - -|
+|    045.023.056.078| (IP address)
+|  & 255.255.192.000| (netmask)
+|- - - - - - - - - -|
+|  = 045.023.000.000|
+|- - - - - - - - - -|
+|          45.23.0.0| (Network Address)
+|- - - - - - - - - -|
+|    045.023.056.078| (IP address)
+|  |~255.255.192.000| (netmask)
+|- - - - - - - - - -|
+|  = 045.023.063.255|
+|- - - - - - - - - -|
+|       45.23.63.255| (Broadcast Address)
+|- - - - - - - - - -|
+
+2)
+From the Netmask, 6 zeros are obtained from 192 and 8 zeros from 0. A total of 14 zeros are on the end of the netmask.  This means that a total 2^14 or 16,384 address exist in this network.  Since the Network and Broadcast Addresses reside in this network, the number of available addresses is simply (2^14)-2 or 16,382.

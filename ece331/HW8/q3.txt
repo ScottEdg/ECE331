@@ -1,0 +1,20 @@
+	#ient & server.
+ a) Find a good C TCP client and server tutorial. Cite your source.
+	http://www.linuxhowtos.org/C_C++/socket.htm
+ b) Work the tutorial and get your code both client and server to work. For your answer, state that the
+tutorial is completed.
+	The tutorial has been completed.
+ c) In your own words, briefly explain the operation of each of the following functions:
+  socket()
+	socket() creates and endpoint, both on server and client sides, that allows communication between differnt machines.
+  bind()
+	bind() assigns an address to a socket. socket() itself only creates a namespace.
+  listen()
+	listen() is a server side function.  It listens for a request from a client to connect to the server.
+  accept()
+	accept() creates a new socket and makes a new socket file descriptor for the new socket on the server side.  The new socket is not considered to be in a listening state
+  getaddrinfo()
+	getaddrinfo() is exactly as it sounds.  It can get the address info of the client or server
+  connect()
+	connect() attempts to make a connection to a socket.  Also if the socket has not been bound (using bind()) connect() will bind it to an unused address space.
+

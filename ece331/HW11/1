@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+import numpy
+import math
+
+plt.figure();
+
+s = numpy.logspace(1, 4)
+H = 8000*s/((s**2)+(5000*s)+(10**6))
+dB = math.log10(H/s)
+ 
+plt.plot(s,dB)
+
+plt.savefig("plot.png")

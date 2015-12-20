@@ -1,0 +1,1 @@
+cmd_/home/pi/Desktop/ece331/hello-5.ko := ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/pi/Desktop/ece331/hello-5.ko /home/pi/Desktop/ece331/hello-5.o /home/pi/Desktop/ece331/hello-5.mod.o
